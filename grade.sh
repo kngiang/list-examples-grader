@@ -15,13 +15,13 @@ echo 'Finished cloning'
 # Then, add here code to compile and run, and do any post-processing of the
 # tests
 
-file=`find student-submission -name "ListExamples.java"`
+file=student-submission/ListExamples.java
 
 if [[ -f $file ]] 
 then
-    echo "Correct file submitted"
+    echo "Correct submission"
 else 
-    echo "Incorrect file submitted"
+    echo "Incorrect submission"
     exit
 fi
 
