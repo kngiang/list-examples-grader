@@ -30,6 +30,14 @@ cp TestListExamples.java grading-area
 cp -r lib grading-area
 
 cd grading-area
+
 javac -cp $CPATH *.java
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples
+
+if [[ $? -eq 1 ]]
+then 
+    echo "Test failed"
+else
+    echo "Test passed"
+fi
  
