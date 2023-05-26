@@ -15,7 +15,7 @@ echo 'Finished cloning'
 # Then, add here code to compile and run, and do any post-processing of the
 # tests
 
-file=student-submission/ListExamples.java
+file=`find student-submission -maxdepth 1 -name "ListExamples.java"`
 
 if [[ -f $file ]] 
 then
